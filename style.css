@@ -1,0 +1,197 @@
+body,h1,h2,h3,h4,h5,h6,p,span{
+    font-family: 'Work Sans',sans-serif;
+}
+
+.header-logo img {
+    margin-right: 15px;
+    width: 45px;
+}
+.primary-menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.primary-menu ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0px 15px;
+    margin-top: 12px;
+    display: inline-block;
+}
+.primary-menu ul li{
+    position: relative;
+    z-index: 2;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    top: 170%;
+    width: 170px;
+    padding-left: 0px;
+    margin-left: 0px;
+    background: white;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.primary-menu ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.308);  
+}
+.primary-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.header-logo h3 {
+    font-size: 25px;
+    position: relative;
+    top: 8px;
+}
+.header-btn a {
+    padding: 3px 27px;
+    display: inline-block;
+    font-weight: 600;
+    color: #6278df !important;
+    border: 2px solid #6278df;
+    position: relative;
+    top: 4px;
+}
+.header-btn a:hover{
+    background-color:#6278df;
+    color: white !important;
+    border: 2px solid #6278df;
+}
+.slider-section{
+    background: url(./image/mbr-10.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 180px;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.slider-caption{
+    margin-top: -100px;
+}
+.slider-caption p{
+    font-size: 25px;
+}
+.slider-caption .h1{
+    font-size: 45px;
+}
+
+.jon-input input{
+    padding: 15px;
+}
+.jon-input a{
+    padding: 15px;
+}
+.using-section{
+    background-color: #f7f9ff;
+}
+.learn-more-items img{
+    width: 180px;
+    margin-right: 20px;
+}
+.learncaption h2{
+    font-size: 20px;
+}
+.learncaption p{
+    font-size: 14px;
+} 
+.img-application{
+    position: relative;
+}
+.img-application::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(98, 120, 223,.7);
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: .5s;
+}
+.img-application:hover.img-application::after{
+    visibility: visible;
+    opacity: 1;
+}
+.plan-item h1{
+    font-size: 40px;
+}
+.plan-item ul li{
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.plan-item ul li span{
+    width: 50px;
+    color: rgba(98, 120, 223,.7);
+    margin-right: 20px;
+    font-weight: 900;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+}
+.planpack{
+    background-color: #ebeefb;
+}
+.plan-btn a{
+    background-color: white;
+    padding: 15px 65px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #91a0e9;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.plan-sd:hover .plan-btn a{
+    background-color: #91a0e9 !important;
+    color: white !important;
+}
+.feedback-section i{
+    font-size: 80px;
+    opacity: .1;
+}
+.feed-user img{
+    width: 60px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+.team-section{
+    background-color: #eef1fb;
+    padding:60px 0px;
+    padding-bottom:60px;
+
+}
+.team-members{
+    position: relative;
+    top: 70px;
+}
+.cardimg img{
+    position: absolute;
+    top: -56px;
+    left: 15px;
+    width: 120px;
+}
+.contact-section input{
+    padding: 20px 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact-section textarea{
+    font-family: 'Courier New', Courier, monospace;
+}
+.appimg{
+    width: 500px;
+}
